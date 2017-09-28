@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67b706f0-7664-4229-8a65-6940900ef94a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PS02/index.js" afterPath="$PROJECT_DIR$/PS02/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PS03/index.js" afterPath="$PROJECT_DIR$/PS03/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,10 +17,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PS02/index.js">
+        <entry file="file://$PROJECT_DIR$/PS03/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+            <state relative-caret-position="240">
+              <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -43,8 +43,8 @@
         <option value="$PROJECT_DIR$/PS01/index01.js" />
         <option value="$PROJECT_DIR$/PS02/index.html" />
         <option value="$PROJECT_DIR$/PS03/index.html" />
-        <option value="$PROJECT_DIR$/PS03/index.js" />
         <option value="$PROJECT_DIR$/PS02/index.js" />
+        <option value="$PROJECT_DIR$/PS03/index.js" />
       </list>
     </option>
   </component>
@@ -88,6 +88,11 @@
               <item name="week3-yichiacheng" type="462c0819:PsiDirectoryNode" />
               <item name="PS02" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="week3-yichiacheng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="week3-yichiacheng" type="462c0819:PsiDirectoryNode" />
+              <item name="PS03" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -128,12 +133,12 @@
       <workItem from="1506621445803" duration="184000" />
       <workItem from="1506621777722" duration="117000" />
       <workItem from="1506621950691" duration="497000" />
-      <workItem from="1506622856378" duration="896000" />
+      <workItem from="1506622856378" duration="1050000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21507000" />
+    <option name="totallyTimeSpent" value="21661000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="43" width="1260" height="669" extended-state="0" />
@@ -188,6 +193,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
           <caret line="54" column="62" lean-forward="false" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -217,6 +223,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
           <caret line="54" column="62" lean-forward="false" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -238,6 +245,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
           <caret line="54" column="62" lean-forward="false" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -370,13 +378,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PS03/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="54" column="62" lean-forward="false" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PS03/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -410,6 +411,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PS03/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
           <folding />
         </state>
       </provider>
