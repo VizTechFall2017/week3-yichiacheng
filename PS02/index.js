@@ -1,8 +1,8 @@
 var svg = d3.select('svg');
 
 /* Your code goes here */
-d3.csv("data.csv",function(dataIn){
-    console.log(dataIn);
+d3.csv("dataps02.csv",function(dataIn){
+        console.log(dataIn);
 
     svg.selectAll('circle')
         .data(dataIn)
@@ -13,14 +13,18 @@ d3.csv("data.csv",function(dataIn){
             return data.x;
         })
         .attr('cy', function(d){
-            return d.cy;
+            return d.y;
         })
         .attr('r', function(d) {
             return d.r;
 
         })
-        .attr('fill',function(d){
-            return d.color;
+
+        .attr('fill','yellow')
+        .attr('stroke','brown')
+        .attr('stroke-width',function(d){
+            return d*0.2;
         })
 
 })
+
