@@ -22,6 +22,7 @@ d3.csv("dataps02.csv",function(dataIn){
 
         .attr('fill','yellow')
         .attr('stroke','brown')
+        .attr('opacity','0.8')
         .attr('stroke-width',function(d){
             return d*0.2;
         })
