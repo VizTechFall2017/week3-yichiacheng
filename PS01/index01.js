@@ -11,7 +11,7 @@ var circles = svg.selectAll('circle')
     .append('circle');
 
 circles.attr('cx',function(d,i){
-    return (i*60)+30;
+    return (i*60)+40;
 })
     .attr('cy',600/2)
     .attr('r',function(d){
