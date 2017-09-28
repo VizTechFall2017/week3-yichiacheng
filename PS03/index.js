@@ -3,7 +3,7 @@ var svg = d3.select('svg');
 /* Your code goes here */
 
 
-d3.csv("Boston1bedrent.csv", function(data){
+d3.csv("boston1bed".csv, function(data){
     console.debug(JSON.stringify(data));
     dataset = data;
 
