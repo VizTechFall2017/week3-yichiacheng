@@ -3,52 +3,88 @@ var svg = d3.select('svg');
 /* Your code goes here */
 
 
-d3.csv("boston1bed".csv, function(dataIn){
+d3.csv("boston1bed2017.csv",function(dataIn){
     console.log(dataIn);
 
-    var margin = {top: 20, right: 20, bottom: 70, left: 40},
-        width = 700 - margin.left - margin.right,
-        height = 500 - margin.top - margin.bottom;
 
+    var s = d3.select('body').append('svg')
+        .attr({
+            'width':800,
+            'height':900
+        })
+        .style({
+            'border':'1px solid #000'
+        });
+    var rect = s.append('g')
+        .attr({
+            'id':'rect'
+        });
+    var price = s.append('g')
+        .attr({
+            'id':'value'
+        });
+    var name = s.append('g')
+        .attr({
+            'id':'name'
+        });
 
-    var x = d3.scaleBand().rangeRound([0, width]).padding(0.1),
-        y = d3.scaleLinear().rangeRound([height, 0]);
+    rect.selectAll('rect')
+        .data(nameById)
+        .enter()
+        .append('rect')
+        .attr({
+            'width':function(d){
+                return d.values[0].values.length;
+            },
+            'height':10,
+            'fill':function(d){
+                if(d.values[0].values.length>3000){
+                    return '#c00';
+                }else if(d.values[0].values.length>2500&&d.values[0].values.length<=300){
+                    return '#f90';
+                }else if(d.values[0].values.length>2000&&d.values[0].values.length<=200){
+                    return '#aa0';
+                }
+            },
+            'x':100,
+            'y':function(d){
+                return d._id*15;
+            }
+        });
 
-    var g = svg.append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    price.selectAll('text')
+        .data(nameById)
+        .enter()
+        .append('text')
+        .attr({
+            'fill':'#000',
+            'x':function(d){
+                return d.values[0].values.length+105;
+            },
+            'y':function(d){
+                return d._id * 15 + 10;
+            }
+        }).text(function(d){
+        return d.values[0].values.length;
+    }).style({
+        'font-size':'12px'
+    });
 
-    d3.csv("boston1bed.csv", function(d) {
-        d.frequency = +d.frequency;
-        return d;
-    }, function(error, data) {
-        if (error) throw error;
-
-        x.domain(data.map(function(d) { return d.letter; }));
-        y.domain([0, d3.max(data, function(d) { return d.frequency; })]);
-
-        g.append("g")
-            .attr("class", "axis axis--x")
-            .attr("transform", "translate(0," + height + ")")
-            .call(d3.axisBottom(x));
-
-        g.append("g")
-            .attr("class", "axis axis--y")
-            .call(d3.axisLeft(y).ticks(10, "%"))
-            .append("text")
-            .attr("transform", "rotate(-90)")
-            .attr("y", 6)
-            .attr("dy", "0.71em")
-            .attr("text-anchor", "end")
-            .text("Frequency");
-
-        g.selectAll(".bar")
-            .data(data)
-            .enter().append("rect")
-            .attr("class", "bar")
-            .attr("x", function(d) { return x(d.letter); })
-            .attr("y", function(d) { return y(d.frequency); })
-            .attr("width", x.bandwidth())
-            .attr("height", function(d) { return height - y(d.frequency)
-            });
-
-
+    name.selectAll('text')
+        .data(nameById)
+        .enter()
+        .append('text')
+        .attr({
+            'fill':'#000',
+            'text-anchor': 'end',
+            'x':90,
+            'y':function(d){
+                console.log(d);
+                return d._id * 15 + 10;
+            }
+        }).text(function(d){
+        return d.values[0].values[0].name;
+    }).style({
+        'font-size':'12px'
+    });
+})
