@@ -40,9 +40,9 @@ d3.csv("boston1bed2017.csv",function(dataIn){
             'fill':function(d){
                 if(d.values[0].values.length>3000){
                     return '#c00';
-                }else if(d.values[0].values.length>2500&&d.values[0].values.length<=300){
+                }else if(d.values[0].values.length>2500&&d.values[0].values.length<=3000){
                     return '#f90';
-                }else if(d.values[0].values.length>2000&&d.values[0].values.length<=200){
+                }else if(d.values[0].values.length>2000&&d.values[0].values.length<=2500){
                     return '#aa0';
                 }
             },

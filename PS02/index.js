@@ -26,6 +26,7 @@ d3.csv("dataps02.csv",function(dataIn){
         .attr('stroke-width',function(d){
             return d*0.2;
         })
+
     var scaleRuler = d3.scaleLinear().domain([0, 100]).range([0, 10]);
 
     console.log(scaleRuler(95));
